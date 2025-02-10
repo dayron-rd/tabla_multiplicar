@@ -11,6 +11,7 @@ function calcular(){
     check();
     tabla_lista.innerHTML = ""
     if (check_input){
+        etiqueta.innerText = "La tabla del " + numero.value + " es:"
         for(let i = 1; i <= 10; i++){
             resultado = i * numero.value
             const node = document.createElement("li");
@@ -23,7 +24,7 @@ function calcular(){
 
 function check(){
     const valor = numero.value;
-    if(valor != undefined && (valor>=1 && valor <=9)){
+    if(valor >= 1 && valor <= 9){
         check_input = true
         etiqueta.innerText = ""
     }else{
