@@ -1,0 +1,15 @@
+body{
+    justify-items: center;
+
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px #777777;
+    box-shadow: 0 2 4 black; 
+    margin-top: 30%;
+}
+p{
+    margin: 0p;
+}
