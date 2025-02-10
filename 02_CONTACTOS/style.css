@@ -13,6 +13,7 @@ body{
     width: 40%;
     display: flex;
     flex-direction: column;
+    
     margin-right: 30px;
     padding: 20px;
     box-shadow: 2px 2px 20px rgb(196, 196, 196);
@@ -24,4 +25,28 @@ body{
     padding: 20px;
     box-shadow: 2px 2px 20px rgb(196, 196, 196);
     border-radius: 10px;
+}
+h1{
+    padding-left: 10px;
+}
+input{
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: medium;
+    border: 1px solid rgb(211, 211, 211);
+}
+button{
+    height: 40px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(20, 94, 20);
+    color: white;
+    font-size: large;
+    width: 90%;
+}
+#add{
+    margin-left: 20px;
+    margin-bottom: 70px; 
 }
