@@ -96,10 +96,10 @@ button:hover{
     display: flex;
     flex-direction: column;
 }
-.p_list_phone{
+.list_phone{
     font-size: 18px;
 }
-.p_list_email{
-    font-size: 18px;
+.list_email{
     font-style: italic;
+    font-size: 16px;
 }

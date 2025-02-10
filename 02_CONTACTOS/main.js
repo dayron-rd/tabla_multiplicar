@@ -34,11 +34,11 @@ function agregarContacto(){
         nombreElemento.innerHTML = getNombre;
 
         const telefonoElemento= document.createElement('p');
-        información.classList.add('p_list_phone')
+        telefonoElemento.classList.add('list_phone')
         telefonoElemento.innerHTML = '📱 '+getTelefono;
 
         const emailElemento = document.createElement('p');
-        información.classList.add('p_list_email')
+        emailElemento.classList.add('list_email')
         emailElemento.innerHTML = '📨 ' + getCorreo;
 
         /* Agregar los elementos a la información */
