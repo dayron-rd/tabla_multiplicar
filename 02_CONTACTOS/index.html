@@ -9,28 +9,19 @@
     <body>
         <div id="listin">
             <section id="datos">
-                <h1>Agregar Contacto</h2>
+                <h1>Agregar Contacto</h1>
                 <input id="name" type="text" placeholder="Nombre" />
-                <input id="phone" type="text" placeholder="Teléfono" />
-                <input ip="email" type="text" placeholder="Email" />
+                <input id="phone" type="number" placeholder="Teléfono" />
+                <input id="email" type="text" placeholder="Email" />
                 <button id="add">Agregar</button>
             </section>
             <section id="libreta">
-                <h1>Contactos</h2>
-                <div class="contact">
-                    <div class="name_icon">
-                        <p class="icon">N</p>
+                <h1>Contactos</h1>
+                    <div id="listaContactos">
+                        <!-- Los contactos se agregan aquí -->
                     </div>
-                    <div class="contact_data">
-                        <h3 id="data_name">Name</h3>
-                        <ul class="data_list">
-                            <li id="data_list_phone">📱 629587629</li>
-                            <li id="data_list_email">📨 ing.dayron.rd@gmail.com</li>
-                        </ul>
-                    </div>
-
-                </div>
             </section>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
