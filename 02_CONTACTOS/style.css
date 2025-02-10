@@ -5,6 +5,8 @@ body{
 #listin{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
     background-color: rgb(226, 226, 226);
     padding: 20px;
 }
@@ -32,6 +34,9 @@ body{
 h1{
     padding-left: 10px;
 }
+p{
+    margin-top: 0px;
+}
 input{
     height: 40px;
     margin-bottom: 10px;
@@ -51,7 +56,7 @@ button{
     width: 90%;
 }
 button:hover{
-    box-shadow: 0px 2px 5px rgb(14, 100, 32);
+    box-shadow: 0px 2px 5px rgb(70, 75, 71);
 }
 #add{
     margin-left: 20px;
@@ -73,11 +78,6 @@ button:hover{
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgb(224, 224, 224);
 }
-th.name_icon{
-    width: 100px;
-    justify-items: center;
-    align-content: center;
-}
 .icon{
     background-color: rgb(0, 81, 255);
     color: white;
@@ -89,19 +89,17 @@ th.name_icon{
     display: flex;
     justify-content: center; /* Centra horizontalmente la letra */
     align-items: center; /* Centra verticalmente la letra */
-}
-
-li{
-    list-style: none;
-    margin-bottom: 20px;
-    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .data_list{
-    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
 }
-#data_list_phone{
-    font-weight: 600;
+.p_list_phone{
+    font-size: 18px;
 }
-#data_list_email{
+.p_list_email{
+    font-size: 18px;
     font-style: italic;
 }
