@@ -81,19 +81,28 @@ function agregarContacto(){
 }
 
 function eliminarContacto(){
-    let delContacto = Number(prompt("Existen " + listadoContactos.length + " contactos seleccione el indice del contacto que desea eliminar" + '\n' + printListado()));
-    
-    console.log("Existen " + listadoContactos.length + " contactos" + " seleccione el indice del contacto que desea eliminar");
-    for (let i; i < listadoContactos.length; i++){
-        console.log(i + ' - ' + listadoContactos[i]);
+
+    let deleteContacto = Number(prompt("Existen " + listadoContactos.length + " contactos seleccione el indice del contacto que desea eliminar: " + '\n\n' + printListado()));
+    if(deleteContacto >= listadoContactos.length){
+        mostrarError();
+        return;
     }
-    /* let contactoEliminar = prompt */
+}
+
+function mostrarError(){
+    alert('Indique el indice del contacto a borrar según su ID (número)');
+    eliminarContacto();
 }
 
 function printListado (){
     for (let i = 0; i < listadoContactos.length; i++){
-        printContact = i + " - " + listadoContactos[i] + '\n';
-    }return printContact;
+        if(i==0){
+        printContact = i + " - " + listadoContactos[i] + '\n';}
+        else{
+            printContact = printContact + i + " - " + listadoContactos[i] + '\n';
+        }
+    }console.log(printContact);
+    return printContact;
 }
 
 botonAgregar.addEventListener('click', agregarContacto);
