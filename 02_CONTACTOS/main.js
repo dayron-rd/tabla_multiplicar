@@ -63,8 +63,9 @@ function agregarContacto(){
         correo.value = "";
 
         // Muestra el boton de Eliminar el contacto 
-        console.log(listadoContactos);
-        if (listadoContactos){
+
+        if (listadoContactos.length!=null){
+
             botonEliminar.style.display = "block";
             listadoContactos = listadoContactos.concat(getNombre);
             console.log(listadoContactos);
@@ -79,6 +80,8 @@ function agregarContacto(){
 }
 
 function eliminarContacto(){
+    let delContacto = Number(prompt("Existen " + listadoContactos.length + " contactos seleccione el indice del contacto que desea eliminar" + '\n' + 'pureba'));
+    
     console.log("Existen " + listadoContactos.length + " contactos" + " seleccione el indice del contacto que desea eliminar");
     for (let i; i < listadoContactos.length; i++){
         console.log(i + ' - ' + listadoContactos[i]);
@@ -86,5 +89,9 @@ function eliminarContacto(){
     /* let contactoEliminar = prompt */
 }
 
+function printListado (){
+    
+}
+
 botonAgregar.addEventListener('click', agregarContacto);
-botonAgregar.addEventListener('click', eliminarContacto);
+botonEliminar.addEventListener('click', eliminarContacto);
