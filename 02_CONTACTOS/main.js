@@ -82,10 +82,19 @@ function agregarContacto(){
 
 function eliminarContacto(){
 
-    let deleteContacto = Number(prompt("Existen " + listadoContactos.length + " contactos seleccione el indice del contacto que desea eliminar: " + '\n\n' + printListado()));
-    if(deleteContacto >= listadoContactos.length){
+    let indiceArray = Number(prompt("Existen " + listadoContactos.length + " contactos seleccione el indice del contacto que desea eliminar: " + '\n\n' + printListado()));
+    console.log(typeof indiceArray);
+    console.log(indiceArray);
+    if(indiceArray > listadoContactos.length){
         mostrarError();
         return;
+    }else{
+        console.log(sectionLibreta.children[indiceArray+2]);
+        sectionLibreta.removeChild(sectionLibreta.children[indiceArray+2]); 
+        listadoContactos.splice(indiceArray,1);
+        console.log(listadoContactos);
+        if(listadoContactos.length==0)
+        {botonEliminar.style.display = "none";}
     }
 }
 
