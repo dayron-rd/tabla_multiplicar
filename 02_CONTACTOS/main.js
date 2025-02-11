@@ -12,6 +12,7 @@ botonEliminar.style.display = "none";
 
 // Array para almacenar los contactos introducidos y luego poder borrarlos
 let listadoContactos = [];
+let printContact 
 
 function agregarContacto(){
     // Toma los valores de los input en el momento de la interrupción
@@ -80,7 +81,7 @@ function agregarContacto(){
 }
 
 function eliminarContacto(){
-    let delContacto = Number(prompt("Existen " + listadoContactos.length + " contactos seleccione el indice del contacto que desea eliminar" + '\n' + 'pureba'));
+    let delContacto = Number(prompt("Existen " + listadoContactos.length + " contactos seleccione el indice del contacto que desea eliminar" + '\n' + printListado()));
     
     console.log("Existen " + listadoContactos.length + " contactos" + " seleccione el indice del contacto que desea eliminar");
     for (let i; i < listadoContactos.length; i++){
@@ -90,8 +91,12 @@ function eliminarContacto(){
 }
 
 function printListado (){
-    
+    for (let i = 0; i < listadoContactos.length; i++){
+        printContact = i + " - " + listadoContactos[i] + '\n';
+    }return printContact;
 }
 
 botonAgregar.addEventListener('click', agregarContacto);
 botonEliminar.addEventListener('click', eliminarContacto);
+
+
