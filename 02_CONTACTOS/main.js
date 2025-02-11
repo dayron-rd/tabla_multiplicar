@@ -57,14 +57,34 @@ function agregarContacto(){
         /* Agregar el contacto a la lista */
         sectionLibreta.appendChild(contacto);
 
-        /* limpiar los campos del formulario */
+        /* Limpiar los campos del formulario */
         nombre.value = "";
         telefono.value = "";
         correo.value = "";
+
+        // Muestra el boton de Eliminar el contacto 
+        console.log(listadoContactos);
+        if (listadoContactos){
+            botonEliminar.style.display = "block";
+            listadoContactos = listadoContactos.concat(getNombre);
+            console.log(listadoContactos);
+        }else{
+            botonEliminar.style.display = "none";
+        }
+
     }else{
         alert('Por favor, rellene los tres campos')
     }
 
 }
 
+function eliminarContacto(){
+    console.log("Existen " + listadoContactos.length + " contactos" + " seleccione el indice del contacto que desea eliminar");
+    for (let i; i < listadoContactos.length; i++){
+        console.log(i + ' - ' + listadoContactos[i]);
+    }
+    /* let contactoEliminar = prompt */
+}
+
 botonAgregar.addEventListener('click', agregarContacto);
+botonAgregar.addEventListener('click', eliminarContacto);
