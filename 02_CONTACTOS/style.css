@@ -61,7 +61,16 @@ button:hover{
 #add{
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 40px; 
+}
+#delete{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: darkgoldenrod; 
+}
+.delete_hidden{
+    display: none;
 }
 #listado{
     display: flex;

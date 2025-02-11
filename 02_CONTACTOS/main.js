@@ -1,5 +1,4 @@
 /* Referencia a los elementos del DOM */
-/* const sectionDatos = document.getElementById('datos') */
 const sectionLibreta = document.getElementById('libreta')
 
 /* Obtener elementos del formulario */
@@ -7,7 +6,12 @@ let nombre = document.getElementById('name');
 let telefono = document.getElementById('phone');
 let correo = document.getElementById('email'); 
 const botonAgregar = document.getElementById('add');
+const botonEliminar = document.getElementById('delete');
 
+botonEliminar.style.display = "none";
+
+// Array para almacenar los contactos introducidos y luego poder borrarlos
+let listadoContactos = [];
 
 function agregarContacto(){
     // Toma los valores de los input en el momento de la interrupción
