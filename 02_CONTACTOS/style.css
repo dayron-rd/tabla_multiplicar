@@ -1,114 +1,123 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(226, 226, 226);
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(226, 226, 226);
 }
-#listin{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: rgb(226, 226, 226);
-    padding: 20px;
+#listin {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	background-color: rgb(226, 226, 226);
+	padding: 20px;
 }
-#datos{
-    background-color: white;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 310px;
-    margin-right: 30px;
-    padding: 20px;
-    box-shadow: 2px 2px 20px rgb(196, 196, 196);
-    border-radius: 10px;
+#datos {
+	background-color: white;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 310px;
+	margin-right: 30px;
+	padding: 20px;
+	box-shadow: 2px 2px 20px rgb(196, 196, 196);
+	border-radius: 10px;
 }
-#libreta{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 60%;
-    padding: 20px;
-    box-shadow: 2px 2px 20px rgb(196, 196, 196);
-    border-radius: 10px;
+#libreta {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 60%;
+	padding: 20px;
+	box-shadow: 2px 2px 20px rgb(196, 196, 196);
+	border-radius: 10px;
 }
-h1{
-    padding-left: 10px;
+h1 {
+	padding-left: 10px;
 }
-p{
-    margin-top: 0px;
+p {
+	margin-top: 0px;
 }
-input{
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding-left: 5px;
-    font-size: medium;
-    border: 1px solid rgb(211, 211, 211);
-    width: 100%;
+input {
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: medium;
+	border: 1px solid rgb(211, 211, 211);
+	width: 100%;
 }
-button{
-    height: 40px;
-    border-radius: 5px;
-    border: 0px;
-    background-color: rgb(20, 94, 20);
-    color: white;
-    font-size: large;
-    width: 90%;
+button {
+	height: 40px;
+	border-radius: 5px;
+	border: 0px;
+	background-color: rgb(20, 94, 20);
+	color: white;
+	font-size: large;
+	width: 90%;
 }
-button:hover{
-    box-shadow: 0px 2px 5px rgb(70, 75, 71);
+button:hover {
+	box-shadow: 0px 2px 5px rgb(70, 75, 71);
 }
-#add{
-    margin-left: 20px;
-    margin-right: 20px;
+#add {
+	margin-left: 20px;
+	margin-right: 20px;
 }
-#delete{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    background-color: darkgoldenrod; 
+#delete {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	background-color: darkgoldenrod;
 }
-.delete_hidden{
-    display: none;
+.delete_hidden {
+	display: none;
 }
-#listado{
-    display: flex;
-    flex-direction: column;
+#listado {
+	display: flex;
+	flex-direction: column;
 }
-.contact{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 7px;
-    list-style: none;
-    height: 150px;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgb(224, 224, 224);
+.contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 7px;
+	list-style: none;
+	height: 150px;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px rgb(224, 224, 224);
 }
-.icon{
-    background-color: rgb(0, 81, 255);
-    color: white;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    font-weight: 600;
-    font-size: 25px;
-    display: flex;
-    justify-content: center; /* Centra horizontalmente la letra */
-    align-items: center; /* Centra verticalmente la letra */
-    margin-left: 20px;
-    margin-right: 20px;
+.icon {
+	background-color: rgb(0, 81, 255);
+	color: white;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	font-weight: 600;
+	font-size: 25px;
+	display: flex;
+	justify-content: center; /* Centra horizontalmente la letra */
+	align-items: center; /* Centra verticalmente la letra */
+	margin-left: 20px;
+	margin-right: 20px;
 }
-.data_list{
-    display: flex;
-    flex-direction: column;
+.data_list {
+	display: flex;
+	flex-direction: column;
 }
-.list_phone{
-    font-size: 18px;
+.list_phone {
+	font-size: 18px;
 }
-.list_email{
-    font-style: italic;
-    font-size: 16px;
+.list_email {
+	font-style: italic;
+	font-size: 16px;
+}
+.delete_button {
+	background-color: red;
+	font-size: small;
+	color: white;
+	border-radius: 5px;
+	height: 20px;
+	width: 70px;
 }
